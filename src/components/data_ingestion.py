@@ -1,10 +1,9 @@
 import os 
 import sys
+sys.path.append("c:\\Users\\91623\\Desktop\\mlproject")
 from src.exception import CustomException
-from src.logger import logging
+import logging
 import pandas as pd
-
-
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
@@ -47,4 +46,4 @@ class DataIngestion:
         
 if __name__=="main":
     obj=DataIngestion()
-    obj.initiate_data_ingestion()
+    obj.initiate_data_ingestion
